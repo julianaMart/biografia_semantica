@@ -11,16 +11,25 @@
         <fieldset>
             <legend>Controles del formulario</legend>
             <label for="usuario">Usuario:</label>
-            <input type="text" pattern="[A-Z][a-z]{5}" value="Juliana" id="usuario" name="usuario" placeholder="Ingrese usuario">
+            <input type="text" pattern="[A-Za-z]{0,5}" id="usuario" name="usuario" placeholder="Ingrese usuario" required>
             <br>
             <br>
             <label for="correo">Correo:</label>
-            <input type="email" Id="correo" name="correo" multiple >
+            <input type="email" Id="correo" name="correo" multiple  required size="40">
             <br>
             <br>
             <label for="telefono">Telefono:</label>
-            <input type="tel" Id="tel" name="tel" >
+            <input type="tel" Id="tel" name="tel" required >
+            <br>
+            <br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" Id="fecha" name="fecha"  >
+
+            
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
         </fieldset>
-    </form>ss
+    </form>
+    <script src="programa.js"></script>
 </body>
 </html>
